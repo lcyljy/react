@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import Header from './Header';
+import Calculator from './Calculator';
 import reportWebVitals from './reportWebVitals';
 
 //App, Header react Component 라고 부르고
@@ -10,8 +11,15 @@ import reportWebVitals from './reportWebVitals';
 // htmlDOM(x) ReactDOM으로 html 유사 element다.
 ReactDOM.render(
   <React.StrictMode>
-     <Header title={["React 스터디","초보"]} nav_li={["component","props","state"]}/>
-     <App />
+    
+    <Header title={["React 스터디","초보"]}
+            nav_li={[
+              {text:"계산기",url:"#calculator"},
+              {text:"pops",url:"pops.html"},
+              {text:"state",url:"state.html"}
+              ]}/>
+    <App />
+    <Calculator />
   </React.StrictMode>,
   document.getElementById('root')
 );
