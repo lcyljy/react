@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>react state</title>
+</head>
+<body>
+    <h1>React state로 update 되는 Component를 만들자</h1>
+    <p>Component는 state 객체를 갖는데 이 state는 변경되는 값을 바로 component에 전달할 수 있다.</p>
+
+    <article>
+        <h2>class Component state 사용법</h2>
+        <ul>
+            <li>import React, {Component} from 'react'를 선언한다.</li>
+            <li>Constructor를 구현한다. (=>Constructor(props){super(props)})</li>
+            <li>Constructor에서 this.state={updateData:0}에 변경될 값을 json으로 선언한다.</li>
+            <li>render()에서 출력하는 component에 {this.state.updateData}로 수정될 곳을 정한다.</li>
+            <li>Component에서 사용할 이벤트 함수를 구한 후 this.setState({updateData:2})로 값을 변경한다.</li>
+            <li>주의!!: this.state.updateData=2; (x)=>수정전 data가 사라져 update 여부를 판단 할 수 없다.</li>
+        </ul>
+    </article>
+    <article>
+        <h2>function Component state 사용법(hook)</h2>
+        <p>React의 함수 컴포넌트는 출력 전용으로 수정하는 state를 제공하지 않아 사용되지 않다가 Hook가 등장하면서 다시 사용됨.</p>
+        <ul>
+            <li>import React,{useState} from 'react'</li>
+            <li>함수의 상단에 const [updateData, setUpdateData]=useState(0)로 state의 초기값을 선언</li>
+        </ul>
+    </article>
+    <article>
+        <h2>React의 State 생명주기</h2>
+        <ul>
+            <li>Component가 출력되고 다시 update 되는 시점은 (new props, setsState(), force-Update()) 세가지로 정상적인 update는 setState()다.</li>
+            <li>HTML dom이 수정되는 시점은 이벤트나 애니메이션이 실행중일때로 React Dom 역시 이벤트로 수정되고 이벤트에 setState()로 dom의 상태를 변경한다.</li>
+            <li>setState()가 호출되면 getDrivedStateFromProps()가 최초로 싱행되면서 render할 component의 props와 state를 세팅한다.</li>
+            <li>만약 state의 값이 변경되었다면 shouldCOmponentUpdate에서 상태 변경을 확인할 수 없다.</li>
+            <li>shouldCOmponentUpdate()에서 render 결정하면 실제 render 실행해 Component가 출력될 준비를 한다.</li>
+            <li>render 도중에 getSnapshotBeforeUpadate()가 update 되기 전 window의 상태를 확인하여 update될 window 상태를 조정할 수 있다.(update 되기 전 스크롤 위치를 알고 update 이후 스크롤 상태 적용)</li>
+            <li>ReactDom과 refs가 업데이트된다.</li>
+            <li>업데이트가 완료되면 componentDidUpdate()가 실행된다.</li>
+        </ul>
+    </article>
+</body>
+</html>
