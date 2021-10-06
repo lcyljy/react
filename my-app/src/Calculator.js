@@ -29,7 +29,7 @@ class Calculator extends React.Component{
         // console.log(this.state.nums[0]);
         // console.log(this.state.operators[0]);
         let result = "";
-        result = result + (this.state.nums[this.state.nums.length-1]+this.state.operators[this.state.operators.length-1]);
+        result += (this.state.nums[this.state.nums.length-1]+this.state.operators[this.state.operators.length-1]);
         console.log(result);
         // if(e.target.value = "="){
         //     this.setState({currentNum: numsArr+operatorsArr})

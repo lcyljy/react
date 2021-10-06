@@ -4,10 +4,11 @@ import './index.css';
 import App from './App';
 import Calculator from './Calculator';
 import reportWebVitals from './reportWebVitals';
+import Dropdown from './dropdown/dropdownComponent';
 
 ReactDOM.render(
   <React.StrictMode>
-    
+    <Dropdown />
     <App />
     <Calculator />
   </React.StrictMode>,

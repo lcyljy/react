@@ -1,0 +1,43 @@
+li {
+    color: red;
+}
+
+.dropdown {
+    position: relative;
+
+    &:hover {
+        .menu {
+            max-height: 100px;
+        }
+            .giho{
+                transform: rotate(180deg) ;
+            }
+    }
+    .giho{
+        margin-left: 5px;
+    text-align: right;
+    display: inline-block;
+    transition: transform 200ms;
+    }
+    .menu {
+        margin: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        max-height: 0px;
+        position: absolute;
+        overflow: hidden;
+        transition: all 200ms;
+    }
+}
+
+.dropdown-active{
+    .link{
+        background-color: aquamarine;
+    }
+    .menu{
+        display: none;
+        &.active{
+            display:block;
+        }
+    }
+ 
+}
