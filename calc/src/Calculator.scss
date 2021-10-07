@@ -1,33 +1,104 @@
+@font-face{
+    font-family:'digital-clock-font';
+    src: url(./fonts/digital-7.ttf);
+   }
+
+body{
+    background-color: #E1E5F7
+}
 .calculator{
+    box-shadow: 11px -11px #88c063;
+    border-radius: 40px;
+    border: 10px solid white;
     margin-left: 300px; // 작업후 지우기
     width: 250px;
-    height: 300px;
-    background-color: green;
+    height: 400px;
+    background-color: #9ede73;
     .Result{
-        margin: 10px auto;
+        border-radius: 18px;
+        border: 8px solid white;
+        margin: 20px ;
         text-align: center;
-        .RightText{
+        textarea{
+            font-family:'digital-clock-font';
+            border-radius: 18px;
+            box-sizing: border-box;
+            border: 0px;
+            resize: none;
+            padding: 8px 13px;
+            background-color:#9ede73;
+            color: #e48900;
             text-align: right;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .result{         
+            font: bold;   
+            font-size: 2em;
+            line-height: 40%;
+            text-shadow: 1px 1px rgba(0,0,0,1);
+        }
+        hr{
+            margin: 0;
+            border: 0.5px solid rgba(255,255,255,0.2);
+            background-color: rgba(255,255,255,0.2);
+        }
+        .process{
+            font-size: .9em;
+            line-height: 0px;
+            text-shadow: 0.6px 0.6px rgba(0,0,0,1);
         }
     }
+    hr{
+        margin: 0;
+        border: 2px solid rgba(255,255,255,0.2);
+        background-color: rgba(255,255,255,0.2);
+    }
     .BtnTable{
-        
+        border-radius:30px;
+        border: 10px solid white;
         position: relative;
         border-spacing: 10px;
         border-collapse: separate;
         width: 200px;
         height: 200px;
-        background-color: black;
-        margin: 10px auto;
+        background-color: #9ede73;
+        margin: 20px auto;
+        ;
     }
     .Btn{
         padding: 5px;
         width: 30px;
         height: 30px;
-        background-color:white;
+        background-color: rgba(255,255,255,0.8);
         border-radius: 50%;
         text-align: center;
+        text-shadow: 0.5px 0.2px;
+        box-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+        :active{
+            box-shadow: inset 2px 2px 6px rgba(0,0,0,0.8),
+                        inset -2px -2px 6px rgba(255,255,255,0.8)
+        }
         
         
+    }
+    
+    .Oper,
+    .resultBtn{
+        background-color: #db962e;
+        color: rgb(233, 231, 229);
+        
+    }
+    .resultBtn{
+        width: 100%;
+        border-radius: 20px;
+        height: 30px;
+        font-size: 1em;
+        text-shadow: 0.7px 0.5px;
+        
+
     }
 }

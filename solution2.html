@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<ul id="userList">
+</ul>
+
+<script>
+const user_arr=["용구","창영","경환","상우"]
+console.log(document.querySelectorAll("#userList")[0])
+let test = document.querySelectorAll("#userList")[0];
+test.createElement("li");
+console.log(test)
+
+// test.createElement
+// function solutionTwo(){
+// let test = document.querySelectorAll("#userList")[0];
+
+// for(let i=0; i<user_arr.length; i++){
+//     `<li>${user_arr[i]}</li>`;
+// };
+// // test.li[i] = user_arr[i]
+// // };
+// console.log(test)
+// }
+// solutionTwo();
+
+</script>
+</body>
+</html>

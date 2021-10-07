@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="userName" value="33" >
+
+<script>
+    console.log(document.querySelectorAll("#userName"));
+    console.log(document.querySelectorAll("#userName")[0])
+// document.querySelectorAll("#userName").addEventListener(e){
+//  console.log(e.target.value);
+// };
+let test = document.querySelectorAll("#userName")[0];
+function solutionOne(){
+test.addEventListener(
+    "change", function(e) {
+    console.log(e.target.value);
+});
+}
+solutionOne();
+</script>
+</body>
+</html>

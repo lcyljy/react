@@ -1,0 +1,20 @@
+body{
+    background-color:#E1E5F7;
+}
+
+.container{
+    width: 1080px;
+    background-color: white;
+    height: 700px;
+    margin: 0 auto;
+    background-image: url('../img/1.png');
+}
+
+.center{
+    text-align: center;
+}
+/* .imgTest{
+    width: 1080px;
+    
+    image: 100px 100px url("../img/2.png")
+} */
