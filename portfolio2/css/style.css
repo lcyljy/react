@@ -3,10 +3,6 @@ body{
 }
 
 .container{
-    width: 1080px;
-    background-color: white;
-    height: 700px;
-    margin: 0 auto;
     background-image: url('../img/1.png');
 }
 
@@ -18,3 +14,17 @@ body{
     
     image: 100px 100px url("../img/2.png")
 } */
+
+.memoBox{
+    width: 300px;
+    height: 200px;
+    
+}
+
+.pink{
+    background-color: #F4D2D2;
+}
+
+.check{
+    border: 1px solid green;
+}

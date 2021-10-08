@@ -124,7 +124,7 @@ class Calculator extends React.Component {
                             <td><button onClick={this.operatorHandler.bind(this)} className="Btn Oper">+</button></td>
                         </tr>
                         <tr>
-                            <td colspan='4'><button onClick={this.resultValue.bind(this)} className="resultBtn">=</button></td>
+                            <td colSpan='4'><button onClick={this.resultValue.bind(this)} className="resultBtn">=</button></td>
                         </tr>
                     </tbody>
                 </table>
