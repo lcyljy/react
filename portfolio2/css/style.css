@@ -11,7 +11,16 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 1000;  
+}
+
+.visible{
+  top: -30%;
+  transition-duration: 1s;
+}
+.nonVisible{
+  
+  transition-duration: 1s;
 }
 
 nav ul {
@@ -20,21 +29,26 @@ nav ul {
 
 nav li {
   flex: auto;
+  list-style-type: none;
+  text-align: center;
 }
 
+
+/*  navbar end */
 .box {
+  position: relative;
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  /* align-items: center; */
   justify-content: space-between;
-  border: 1px solid green;
-  height: 40px;
+  width: 70%;
 
 }
 
 .content {
   position: absolute;
   width: 300px;
-  height: 250px;
+  height: auto;
   display: inline-block;
   vertical-align: middle;
   z-index: 500;
@@ -43,12 +57,33 @@ nav li {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+ /* test for bBox */
 .wrap{
   display: flex;
   flex-direction: row;
-
+  
+}
+.wrap2{
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
+hr{
+  border: 1px solid black;
+}
+
+.project {
+  width: 320px;
+  height: 200px;
+  padding-top: 50px;
+}
+
+.inline{
+  justify-content: space-between;
+}
+
+/* test for bBox */
 .aBox {
   background-color: #f4d2d2;
 }
@@ -66,9 +101,10 @@ nav li {
 }
 
 .mainBox1 {
+  
   padding: 0px;
-  margin-top: 70px;
-  width: 100%;
+ 
+  width: 80%;
   height: auto;
   background-image: url("../img/1a.png");
   background-repeat: no-repeat;
@@ -76,6 +112,12 @@ nav li {
   background-size: cover;
   background-position: center;
   /* background-position: center; */
+}
+
+#leftA{
+  margin-top: 110px;
+  margin-left: 0;
+  padding: 0;
 }
 
 .sideA {
@@ -95,6 +137,11 @@ nav li {
   background-repeat: no-repeat;
   background-origin: border-box;
   background-size: cover;
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: space-between;
+
   /* background-position: center; */
 }
 
