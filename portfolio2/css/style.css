@@ -28,6 +28,9 @@ nav ul {
 }
 
 nav li {
+  height: 50px;
+  font-weight: bold;
+  font-size: 2em;
   flex: auto;
   list-style-type: none;
   text-align: center;
@@ -160,10 +163,12 @@ hr{
   text-align: center;
 }
 
-img {
-  width: 100%;
-  height: auto;
+.coverImg{
+ width: 100%;
+ height: auto;
+ object-fit: cover;
 }
+
 
 /* .imgTest{
     width: 1080px;
