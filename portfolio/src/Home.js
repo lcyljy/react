@@ -6,7 +6,9 @@ export class Home extends Component {
         return (
             <div>
                 <main>
-                    
+                    <div className="container check">
+                        <a href=""><div className="mainContainer check"></div></a>
+                    </div>
                 </main>
             </div>
         )

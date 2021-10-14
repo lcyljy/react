@@ -7,7 +7,7 @@ body{
 .wrap{
 	margin-left: auto;
 	margin-right: auto;
-	width: 960px;
+	width: 100%;
 	position: relative;
 }
 h1{
@@ -91,16 +91,59 @@ a{
 	text-decoration: none;
 }
 
-@media screen (min-width: 1600px) {
+@media (min-width: 1600px) {
 
 }
 
-@media screen (max-width: 1024px) {
-
+@media (max-width: 1024px) {
+	h1{
+		font-size: 4em;
+	}
+	p{
+		font-size: 1.8em;
+	}
+	
+	.intro p{
+		width: 50%;
+		margin: 0 auto;
+		font-size: 1.5em;
+	}
+	.title{
+		padding-left: 100px;
+	}
+	
 }
-@media screen (max-width: 768px) {
-
+@media (max-width: 768px) {
+	h1{
+		font-size: 3em;
+	}
+	p{
+		font-size: 1.6em;
+	}
+	
+	.intro p{
+		width: 50%;
+		margin: 0 auto;
+		font-size: 1.5em;
+	}
+	.title{
+		padding-left: 80px;
+	}
 }
-@media screen (max-width: 480x) {
-
+@media  (max-width: 480x) {
+	h1{
+		font-size: 1em;
+	}
+	p{
+		font-size: 0.8em;
+	}
+	
+	.intro p{
+		width: 50%;
+		margin: 0 auto;
+		font-size: 1.4em;
+	}
+	.title{
+		padding-left: 60px;
+	}
 }

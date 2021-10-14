@@ -1,4 +1,41 @@
 body{
-    background-color: #E1E5F7;
+   background-color: #E1E5F7;
+// overflow: hidden;
+// height: 100%;
 }
 
+.check{
+    border: 1px solid green;
+}
+
+// .container{
+//     width: 780px;
+//     height: 780px;
+//     margin: 0 auto;
+//     vertical-align: middle;
+//     display: flex;
+
+
+// }
+
+.mainContainer{
+
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/포트폴리오-001.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+
+}
+
+.mainContainer:hover{
+    cursor: pointer;
+}
+
+// @media (max-height:1080px){
+// .mainContainer{
+// //     background-size: contain;
+// }
+// }
