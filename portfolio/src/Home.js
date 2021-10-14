@@ -6,8 +6,8 @@ export class Home extends Component {
         return (
             <div>
                 <main>
-                    <div className="container check">
-                        <a href="https://lcyljy.github.io/react/portfolio3"><div className="mainContainer check"></div></a>
+                    <div className="container">
+                        <a href="https://lcyljy.github.io/react/portfolio3"><div className="mainContainer"></div></a>
                     </div>
                 </main>
             </div>
