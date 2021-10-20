@@ -10,7 +10,7 @@
     <meta name="keywords" content="HTML, CSS, JS(JAVASCRIPT), 프론트엔드, 포트폴리오" />
     <meta name="author" content="Lodin Lee" />
     <link rel="icon" href="./img/profileImage.ico" />
-    <title>Portfolio</title>
+    <title>Main Portfolio1</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -19,14 +19,23 @@
 </head>
 
 <body>
-
-    <ul id="menu">
-        <li data-menuanchor="mainPage" class="active"><a href="#mainPage">Home</a> </li>
-        <li data-menuanchor="mainPage2"><a href="#mainPage2">Point</a></li>
-        <li data-menuanchor="firstPage"><a href="#firstPage">Skills</a></li>
-        <li data-menuanchor="secondPage"><a href="#secondPage">Portfolio</a></li>
-        <li data-menuanchor="3rdPage"><a href="#3rdPage">Contact me</a></li>
-    </ul>
+    <a href="#" class="hamburger-button">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </a>
+    <div class="overlay">
+        <nav id="menu">
+            <ul>
+                <li data-menuanchor="mainPage" class="active"><a href="https://lcyljy.github.io/">Home</a> </li>
+                <li data-menuanchor="mainPage2"><a href="#mainPage2">Point</a></li>
+                <li data-menuanchor="firstPage"><a href="#firstPage">Skills</a></li>
+                <li data-menuanchor="secondPage"><a href="#secondPage">Portfolio</a></li>
+                <li data-menuanchor="3rdPage"><a href="#3rdPage">Contact me</a></li>
+            </ul>
+        </nav>
+    </div>
     <main id="fullpage">
         <div class="section active" id="section0">
 
@@ -41,11 +50,13 @@
         <div class="section" id="section1">
             <div class="title">
                 <p>저는</p>
-                <h1>_____를</h1>
+                <h1>_____을</h1>
                 <p>중요시하는 개발자입니다.</p>
 
             </div>
-            <div class="title emphasis"><h1>이렇게 하려던게 아닌데...</h1></div>
+            <div class="title emphasis">
+                <h1>최적의 정보전달</h1>
+            </div>
         </div>
         <div class="section " id="section2">
             <div class="title">
@@ -67,23 +78,23 @@
 
         <div class="section" id="section3">
             <div class="wrap">
-            <div class="slide" id="slide1">
-                <div class="intro">
-                    <h1><a href="http://127.0.0.1:5500/portfolio2/index.html">Portfolio</a></h1>
+                <div class="slide" id="slide1">
+                    <div class="intro">
+                        <h1><a href="http://127.0.0.1:5500/portfolio2/index.html">Portfolio</a></h1>
+                        <p>미리보기예제, hover(scale확대), githublink</p>
+                    </div>
+                </div>
+                <div class="slide active" id="slide2">
+                    <div class="intro">
+                        <h1><a href="#">Portfolio2</a></h1>
+                        <p>미리보기예제, hover(scale확대), githublink</p>
+                    </div>
+                </div>
+                <div class="slide" id="slide3">
+                    <h1>Portfolio3</h1>
                     <p>미리보기예제, hover(scale확대), githublink</p>
                 </div>
             </div>
-            <div class="slide active" id="slide2">
-                <div class="intro">
-                    <h1><a href="#">Portfolio2</a></h1>
-                    <p>미리보기예제, hover(scale확대), githublink</p>
-                </div>
-            </div>
-            <div class="slide" id="slide3">
-                <h1>Portfolio3</h1>
-                <p>미리보기예제, hover(scale확대), githublink</p>
-            </div>
-        </div>
         </div>
 
 
@@ -92,7 +103,8 @@
                 <h1>연락처</h1>
                 <p>lodin_love@naver.com</p>
                 <h1>더 알아보기</h1>
-                <p><a href="https://github.com/lcyljy"><img src="./img/github.png" alt="githubIcon"></a> <a href="https://blog.naver.com/lodin_love"><img src="./img/naver.png" alt="naverBlogIcon"></p></a>
+                <p><a href="https://github.com/lcyljy"><img src="./img/github.png" alt="githubIcon"></a> <a
+                        href="https://blog.naver.com/lodin_love"><img src="./img/naver.png" alt="naverBlogIcon"></p></a>
             </div>
         </div>
 
@@ -146,7 +158,7 @@
             slidesNavPosition: 'bottom',
             lazyLoad: true,
             navigation: true,
-            navigationTooltips: ['Home','Point','Skills','Portfolio','Contact me'],
+            navigationTooltips: ['Home', 'Point', 'Skills', 'Portfolio', 'Contact me'],
             menu: '#menu',
             controlArrows: true,
             keyboardScrolling: true,

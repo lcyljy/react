@@ -11,3 +11,12 @@
 // console.log(document.querySelectorAll("#fp-nav ul li a")[1].firstChild)
 // document.write(document.querySelectorAll("#fp-nav ul li a")[1].firstChild.classList.add("bg-white"))
 // console.log(document.querySelectorAll("#fp-nav ul li a")[0].firstChild)
+
+document.querySelector('.hamburger-button').addEventListener("click", function (event) {
+  event.preventDefault();
+  this.classList.toggle("active");
+  document.querySelector(".overlay").classList.toggle("visible");
+
+})
+
+console.log(document.querySelector(".hamburger-button"))
