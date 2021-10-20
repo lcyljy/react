@@ -17,6 +17,5 @@ document.querySelector('.hamburger-button').addEventListener("click", function (
   this.classList.toggle("active");
   document.querySelector(".overlay").classList.toggle("visible");
 
-})
+});
 
-console.log(document.querySelector(".hamburger-button"))
