@@ -110,6 +110,16 @@ a {
   z-index: 150;
 }
 
+.intro img {
+  border-radius: 20px;
+  border: 6px solid rgba(0, 0, 0, 0.4);
+}
+
+.intro img:hover {
+  transform: scale(1.04);
+  transition: transform 0.2s;
+}
+
 .fp-right {
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 15px;
