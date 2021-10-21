@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "cafe24";
+  src: url("../fonts/Cafe24Shiningstar.ttf");
+}
+
+@font-face {
+  font-family: "scDream7";
+  src: url("../fonts/SCDream7.otf");
+}
+
+@font-face {
+  font-family: "yellowTail";
+  src: url("../fonts/Yellowtail-Regular.ttf");
+}
+
+.ft-cafe24 {
+  font-family: cafe24;
+}
+
+.ft-scDream7 {
+  font-family: scDream7;
+}
+
+.ft-yellowTail {
+  font-family: yellowTail;
+}
+
+.ft-italic {
+  font-style: italic;
+}
+
+.ft-underLine {
+  text-decoration: underline;
+}
