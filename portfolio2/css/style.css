@@ -4,6 +4,15 @@ body {
   font-family: scDream7;
 }
 
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #000;
+  text-decoration: none;
+}
+
 /* nav box */
 
 header {
@@ -37,6 +46,8 @@ nav li {
 }
 
 /*  navbar end */
+
+/* main start */
 .box {
   /* position: relative; */
   /* display: flex; */
@@ -230,6 +241,8 @@ hr {
 } */
 
 /* section test end */
+
+/* main end */
 
 /* footer 라인 */
 footer {
