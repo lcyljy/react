@@ -11,7 +11,7 @@ for (let i = 0; i < boxArr.length; i++) {
 
 console.log(document.querySelector("header"))
 // function scrollFunction(){
-  
+
 //   document.querySelector("header").classList.remove("nonVisible");
 //   document.querySelector("header").classList.add("visible"); 
 // }
@@ -43,28 +43,28 @@ let scrollHeight = window.pageYOffset;
 //   console.log(e);
 //   console.log(timeStamp,e.timeStamp);
 //   timeStamp=e.timeStamp;
-  
+
 //   return scrollHeight1;
 // });
 let didScroll;
-window.onscroll = function(e){
-  didScroll= true;
+window.onscroll = function (e) {
+  didScroll = true;
 }
 
 
-setInterval(function(){
-  
-  if(didScroll){
+setInterval(function () {
+
+  if (didScroll) {
     document.querySelector("header").classList.remove("nonVisible");
-    document.querySelector("header").classList.add("visible"); 
+    document.querySelector("header").classList.add("visible");
     didScroll = false;
-    } else {
+  } else {
     document.querySelector("header").classList.remove("visible");
     document.querySelector("header").classList.add("nonVisible");
-    
+
   }
 
-}, 500)
+}, 200)
 
 
 // console.log(scrollHeight1)
