@@ -268,7 +268,7 @@ footer {
   margin: 0 auto;
   background-color: #cacaca;
   /* margin: 0 -5px; */
-  font-size: 0px;
+  font-size: 1rem;
 }
 
 .ft_item {
@@ -276,7 +276,7 @@ footer {
   height: 250px;
   /* padding: 0 5px; */
 
-  text-align: center;
+  text-align: left;
   box-sizing: border-box;
   background-color: white;
 
@@ -299,10 +299,15 @@ footer {
 
 .test_parent .ft_items .ft_item .inner:before {
   content: "";
-  display: inline-block;
+  /* display: inline-block; */
   vertical-align: middle;
   width: 0;
   height: 100%;
+}
+
+.ft_content {
+  padding-left: 20px;
+  padding-top: 30px;
 }
 
 .ft-hidden {
@@ -311,4 +316,12 @@ footer {
   visibility: hidden;
 }
 
+#ft-copyright {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  font-size: 0.8rem;
+  /* text-align: center; */
+}
 /* footer 라인 end */
