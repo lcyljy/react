@@ -2,8 +2,17 @@
 body {
   font-family: arial, helvetica;
   color: #333;
-  color: rgba(0, 0, 0, 0.5);
+  color: #00000080;
 }
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #333;
+  text-decoration: none;
+}
+
 .wrap {
   margin-left: auto;
   margin-right: auto;
