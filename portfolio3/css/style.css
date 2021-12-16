@@ -87,6 +87,32 @@ p {
   padding-left: 180px;
 }
 
+.test {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 110px;
+}
+
+#map {
+  width: 420px;
+  height: 380px;
+  border-radius: 30px;
+  border: 4px solid rgba(0, 0, 0, 0.3);
+}
+#mapLinkBtn {
+  margin: 15px;
+  background-color: rgba(255, 255, 255, 0.6);
+  height: 30px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+#mapLinkBtn:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  cursor: pointer;
+}
+
 .emphasis {
   font-weight: bold;
   font-size: 0.7em;
@@ -157,6 +183,9 @@ a {
   }
   .title {
     padding-left: 100px;
+  }
+  #mapContainer {
+    display: none;
   }
 }
 @media (max-width: 768px) {

@@ -115,12 +115,21 @@
 
 
         <div class="section" id="section4">
-            <div class="title">
-                <h1>연락처</h1>
-                <p>lodin_love@naver.com</p>
-                <h1>더 알아보기</h1>
-                <p><a href="https://github.com/lcyljy"><img src="./img/github.png" alt="githubIcon"></a> <a
-                        href="https://blog.naver.com/lodin_love"><img src="./img/naver.png" alt="naverBlogIcon"></p></a>
+            <div class="test">
+                <div class="title">
+                    <h1>연락처</h1>
+                    <p>lodin_love@naver.com</p>
+                    <h1>더 알아보기</h1>
+                    <p><a href="https://github.com/lcyljy"><img src="./img/github.png" alt="githubIcon"></a> <a
+                            href="https://blog.naver.com/lodin_love"><img src="./img/naver.png" alt="naverBlogIcon"></p>
+                    </a>
+                </div>
+                <div id="mapContainer">
+                    <div id="map"></div>
+                    <div class="center"><a
+                            href="https://map.kakao.com/link/to/안산한대앞역,37.30971911346024,126.85360235343886"
+                            target="_blank"><button id="mapLinkBtn" type="button">회사에서 지원자 근처 역까지 길찾기</button></a></div>
+                </div>
             </div>
         </div>
 
@@ -183,6 +192,30 @@
 
     </script>
     <script type="text/javascript" src="./js/main.js"></script>
+    <!-- kakao open api map 정보 가져오기 -->
+    <script type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=db04e21203bef568408040a4949b13b7&libraries=services,clusterer,drawing"></script>
+    <script>
+
+        var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+        var options = { //지도를 생성할 때 필요한 기본 옵션
+            center: new kakao.maps.LatLng(37.30971911346024, 126.85360235343886), //지도의 중심좌표.
+            level: 7 //지도의 레벨(확대, 축소 정도)
+        };
+
+        var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+
+        // 지도에 마커를 표시한다.
+        var markerPosition = new kakao.maps.LatLng(37.30971911346024, 126.85360235343886);
+
+
+        var marker = new kakao.maps.Marker({
+            position: markerPosition
+        });
+        marker.setMap(map);
+
+
+    </script>
 </body>
 
 </html>
