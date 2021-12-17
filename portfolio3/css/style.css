@@ -187,6 +187,12 @@ a {
   #mapContainer {
     display: none;
   }
+
+  .placeholder {
+    width: 250px;
+    height: 320px;
+  }
+  /* 임의로 반응형으로 이미지조정. 현재는 가상이미지를 끌어와서 화면에 표기했기에 해당 크기가 350x410으로 표기되나, 추후 사진 업로드시 변경 */
 }
 @media (max-width: 768px) {
   .overlay {
@@ -254,7 +260,7 @@ a {
     font-size: 3em;
   }
   p {
-    font-size: 1.6em;
+    font-size: 1.4em;
   }
 
   .intro p {
@@ -271,6 +277,7 @@ a {
     height: 76px;
   }
 }
+
 @media (max-width: 480px) {
   h1 {
     font-size: 1em;
