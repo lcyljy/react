@@ -84,13 +84,13 @@
 
                     <div class="intro"><a href="https://lcyljy.github.io/react/portfolio2/index.html" target="_blank">
                             <h1>Portfolio</h1>
-                            <img src="https://via.placeholder.com/350x410" class="placeholder" alt="">
+                            <img src="./img/content/portfolio2.PNG" class="placeholder" alt="">
                             <p>부트스트랩 css 라이브러리와 바닐라 자바스크립트로
                                 웹페이지 구현</p>
                         </a>
                     </div>
                 </div>
-                <div class="slide active" id="slide2">
+                <div class="slide" id="slide2">
 
                     <div class="intro"> <a href="#mainPage">
                             <h1>Portfolio2</h1>
@@ -102,11 +102,29 @@
                     </div>
 
                 </div>
-                <div class="slide" id="slide3">
-                    <div class="intro"><a href="https://affectionate-williams-08c4fc.netlify.app" target="_blank">
-                            <h1>Portfolio3(Side Portfolio)</h1>
-                            <img src="https://via.placeholder.com/350x410" class="placeholder" alt="">
-                            <p>임시 예제로 국비학원에서 수업했던 내용의 파일을 가져왔습니다. 추후 수정 예정</p>
+                <div class="slide active" id="slide3">
+                    <div class="intro"><a href="https://lcyljy.github.io/side_portfolio/minee/" target="_blank">
+                            <h1>MINEE Timer</h1>
+                            <img src="./img/content/mineetimer.PNG" class="placeholder" alt="">
+                            <p>마이니 타이머와 뽀모도로 타이머를 바탕으로 제작한 타이머 사이트</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="slide" id="slide4">
+                    <div class="intro"><a href="https://main--beautiful-quokka-81ca80.netlify.app/" target="_blank">
+                            <h1>개발 블로그</h1>
+                            <img src="./img/content/developblog.PNG" class="placeholder" alt="">
+                            <p>react 기반 Gatsby로 만든 개발 블로그</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="slide" id="slide5">
+                    <div class="intro"><a
+                            href="https://lcyljy.github.io/nomadcoder/VanillajsChrome/Challenge/index.html"
+                            target="_blank">
+                            <h1>ToDo List</h1>
+                            <img src="./img/content/todolist.PNG" class="placeholder" alt="">
+                            <p>로컬스토리지를 활용하여 ToDo List 제작</p>
                     </div>
                     </a>
                 </div>
@@ -198,15 +216,14 @@
 
         var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
         var options = { //지도를 생성할 때 필요한 기본 옵션
-            center: new kakao.maps.LatLng(37.30971911346024, 126.85360235343886), //지도의 중심좌표.
-            level: 7 //지도의 레벨(확대, 축소 정도)
+            center: new kakao.maps.LatLng(37.25092701161, 127.07112264979), //지도의 중심좌표.
+            level: 8 //지도의 레벨(확대, 축소 정도)
         };
 
         var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
 
         // 지도에 마커를 표시한다.
-        var markerPosition = new kakao.maps.LatLng(37.30971911346024, 126.85360235343886);
-
+        var markerPosition = new kakao.maps.LatLng(37.25092701161, 127.07112264979);
 
         var marker = new kakao.maps.Marker({
             position: markerPosition
