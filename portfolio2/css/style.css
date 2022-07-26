@@ -60,7 +60,7 @@ nav li {
 }
 
 .content {
-  width: 300px;
+  width: 100%;
   height: auto;
   display: inline-block;
   /* vertical-align: middle; */
@@ -71,7 +71,12 @@ nav li {
 }
 
 .textA {
+  text-align: left;
   padding-left: 100px;
+}
+
+.textB {
+  padding-left: 30px;
 }
 /* test for bBox */
 .wrap {
@@ -314,6 +319,15 @@ footer {
   /* 임시설정 나중에 수정할 것.*/
   height: 400px;
   visibility: hidden;
+}
+
+.ft_content img{
+  width: 25px;
+  transition: all 0.2s linear;
+}
+
+.ft_content img:hover{
+  transform:scale(1.3);
 }
 
 #ft-copyright {
