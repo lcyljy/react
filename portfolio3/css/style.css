@@ -146,6 +146,8 @@ a {
 }
 
 .intro img {
+  width:350px;
+  height: 410px;
   border-radius: 20px;
   border: 6px solid rgba(0, 0, 0, 0.4);
 }
@@ -266,7 +268,7 @@ a {
   .intro p {
     width: 50%;
     margin: 0 auto;
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
   .title {
     padding-left: 80px;
@@ -276,7 +278,16 @@ a {
     width: 76px;
     height: 76px;
   }
+
+  .intro img {
+    width:240px;
+    height: 350px;
+    border-radius: 20px;
+    border: 6px solid rgba(0, 0, 0, 0.4);
+  }
 }
+
+
 
 @media (max-width: 480px) {
   h1 {
@@ -289,9 +300,15 @@ a {
   .intro p {
     width: 50%;
     margin: 0 auto;
-    font-size: 1.4em;
+    font-size: 1.2em;
   }
   .title {
     padding-left: 60px;
+  }
+  .intro img {
+    width:180px;
+    height: 260px;
+    border-radius: 20px;
+    border: 6px solid rgba(0, 0, 0, 0.4);
   }
 }
